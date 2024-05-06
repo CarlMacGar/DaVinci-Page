@@ -1,0 +1,39 @@
+---
+import { Picture } from "astro:assets";
+import davinci from "assets/davinci.jpg";
+import Link from "@components/ui/link.astro";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={davinci}
+      alt="Astronaut in the air"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+      class="rounded-e-full"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Un legado de innovación y creatividad
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Del genio polifacético <strong>Leonardo Da Vinci</strong> sale nuestro nombre de equipo y nuestra inspiración. Buscamos soluciones creativas a problemas desafiantes, pues para innovar hay que salir de la caja.
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="/contact"
+        class="flex gap-1 items-center justify-center hover:translate-y-1"
+        rel="noopener">
+         Creemos un futuro innovador
+      </Link>
+    </div>
+  </div>
+</main>
+
+
