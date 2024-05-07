@@ -1,54 +1,36 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon";
+import Link from "@components/ui/link.astro";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "El software que deseas.",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+      "Desarrollamos software único para tu empresa, con lo último de tecnologías y mejores prácticas",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Página web personalizada.",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Te podemos ayudar a hacer una página web estática para presentarte a tí o a tu empresa.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Bases de datos",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "Si necesitas diseñar, desarrollar y/o gestionar una base de datos, no dudes en llamarnos",
     icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Conoce nuestros servicios
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Los grandes inventos del presentan empezaron como una simple idea.
   </p>
 </div>
 
@@ -62,6 +44,14 @@ const features = [
         <div>
           <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog"
+              class="flex gap-1 items-center justify-center hover:translate-y-1"
+              rel="noopener">
+              Conoce más aquí
+            </Link>
+          </div>
         </div>
       </div>
     ))
