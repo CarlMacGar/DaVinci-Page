@@ -1,7 +1,5 @@
 ---
 import Container from "@components/container.astro";
-import davinci from "assets/davinci.jpg";
-import Picture from "astro/components/Picture.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
@@ -29,14 +27,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg flex">
-          <Picture
-          src={davinci}
-          alt="Astronaut in the air"
-          loading="eager"
-          format="avif"
-          class="rounded-e-full w-9"
-          />
-          <span class="font-bold text-slate-800 mt-3 ml-[1px]">aVinci</span><span
+          <img src="./Davinci.jpg" alt="Logo DaVinci" class="h-8 rounded-e-full">
+          <span class="font-bold text-slate-800 mt-3 ml-0">aVinci</span><span
             class="text-slate-500 mt-3 ml-1"> Code</span>
         </a>
         <div class="block lg:hidden">
