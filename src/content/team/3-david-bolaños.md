@@ -3,7 +3,7 @@ draft: false
 name: "Andrés David Bolaños"
 title: "Moderador"
 avatar: {
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?&fit=crop&w=280",
+    src: "https://i.postimg.cc/nh6hwFhq/Imagen-de-Whats-App-2024-05-20-a-las-22-45-31-9212d060.jpg",
     alt: "David Bolaños"
 }
 publishDate: "2022-11-09 15:39"
